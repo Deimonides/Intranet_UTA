@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ABM Novedades</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .novedad { border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px; }
+        .visible { background-color: #eaffea; }
+        .invisible { background-color: #f0f0f0; }
+        input, textarea, button { display: block; margin: 5px 0; width: 100%; }
+        .inline { display: inline-block; width: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Administrar Novedades</h1>
+    <div id="novedades"></div>
+    <h2>Agregar Novedad</h2>
+    <div>
+        <input type="text" id="new-titulo" placeholder="Título">
+        <input type="date" id="new-fecha">
+        <textarea id="new-texto" placeholder="Texto"></textarea>
+        <label><input type="checkbox" id="new-mostrar"> Mostrar</label>
+        <button onclick="addNovedad()">Agregar</button>
+    </div>
+    <button onclick="guardarCambios()">Guardar Cambios</button>
+
+    <script src="/scripts/abm-novedades.js"></script>
+</body>
+</html>

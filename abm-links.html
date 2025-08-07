@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ABM Links</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .item input { margin-right: 10px; }
+        .actions { margin-top: 10px; }
+        .actions button { margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Administrar Links</h1>
+    <label for="jsonSelect">Seleccionar Archivo:</label>
+    <select id="jsonSelect"></select>
+
+    <h2>Items</h2>
+    <div id="itemsContainer"></div>
+
+    <h2>Agregar Nuevo Item</h2>
+    <div>
+        <input type="text" id="newNombre" placeholder="Nombre">
+        <input type="text" id="newUrl" placeholder="URL">
+        <input type="text" id="newGrupo" placeholder="Grupo">
+        <button onclick="addItem()">Agregar</button>
+    </div>
+
+    <div class="actions">
+        <button onclick="saveChanges()">Guardar Cambios</button>
+    </div>
+
+        <script type="module" src="scripts/abm-links.js"></script>
+</body>
+</html>
